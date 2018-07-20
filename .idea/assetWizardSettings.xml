@@ -28,17 +28,17 @@
                                 </PersistentState>
                               </value>
                             </entry>
-                            <entry key="launcherLegacy">
+                            <entry key="launcher">
                               <value>
                                 <PersistentState>
                                   <option name="children">
                                     <map>
-                                      <entry key="image">
+                                      <entry key="foregroundImage">
                                         <value>
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="paddingPercent" value="5" />
+                                                <entry key="scalingPercent" value="59" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -48,10 +48,24 @@
                                   </option>
                                   <option name="values">
                                     <map>
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="ffffff" />
+                                      <entry key="foregroundImage" value="C:\Users\usuario\Desktop\think-green-512.png" />
+                                      <entry key="legacyIconShape" value="NONE" />
+                                      <entry key="webIconShape" value="NONE" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                            <entry key="launcherLegacy">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="iconShape" value="NONE" />
-                                      <entry key="imageAsset" value="C:\Users\usuario\Desktop\questionMark.png" />
-                                      <entry key="outputName" value="ic_question" />
+                                      <entry key="imageAsset" value="C:\Users\usuario\Desktop\think-green-512.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
