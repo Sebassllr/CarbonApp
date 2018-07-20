@@ -53,10 +53,13 @@ public class ActivityQuestions extends AppCompatActivity implements View.OnClick
                 break;
             }
             case R.id.btnCalculate: {
-                makeCalculations();
-                Intent intent = new Intent(this, ActivityResult.class);
-                intent.putExtra("total", finalValue);
-                startActivity(intent);
+
+                if(makeCalculations()){
+                    Intent intent = new Intent(this, ActivityResult.class);
+                    intent.putExtra("total", finalValue);
+                    startActivity(intent);
+                }
+
                 finalValue = 0.0;
                 break;
             }
@@ -92,7 +95,7 @@ public class ActivityQuestions extends AppCompatActivity implements View.OnClick
     /**
      * Realiza los cálculos necesarios para calcular la huella de carbono
      */
-    private void makeCalculations() {
+    private Boolean makeCalculations() {
         TextView electricbill = findViewById(R.id.inputElectricBill);
         textViews.add(electricbill);
         TextView gasBill = findViewById(R.id.inputGasBill);
@@ -119,8 +122,9 @@ public class ActivityQuestions extends AppCompatActivity implements View.OnClick
                 TextView carKm = findViewById(R.id.inputCarValue);
                 finalValue += (Double.parseDouble(carKm.getText().toString()) * 12);
             }
+            return Boolean.TRUE;
         }
-
+        return Boolean.FALSE;
     }
 
     /**
