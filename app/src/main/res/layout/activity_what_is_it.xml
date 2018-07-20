@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="10"
+    tools:context=".ActivityWhatIsIt">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/veganstyle"
+        android:textSize="40sp"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/WhatIsTitle"/>
+    <ScrollView
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/WhatIsIt"
+            android:textColor="@color/black" />
+    </ScrollView>
+
+    <Button
+        android:layout_gravity="center"
+        android:background="@drawable/round_button"
+        android:foreground="@drawable/ripple_effect"
+        android:id="@+id/btnActivity"
+        android:text="@string/goBack"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+</LinearLayout>

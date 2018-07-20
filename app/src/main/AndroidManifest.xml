@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ActivityQuestions"
+            android:label="@string/title_activity_questions"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ActivityWhatIsIt" />
+        <activity android:name=".ActivityResult"></activity>
     </application>
 
 </manifest>

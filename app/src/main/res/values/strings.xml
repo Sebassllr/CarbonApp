@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">CarbonApp</string>
+    <string name="start">Calcula tu huella</string>
+    <string name="caculate">Calcular</string>
+    <string name="title_activity_questions">ActivityQuestions</string>
+    <string name="Electric_Bill">¿Valor de la factura de la luz?</string>
+    <string name="Gas_Bill">¿Valor de la factura del gas?</string>
+    <string name="Plane">Número de vuelos (ida y vuelta) este año...</string>
+    <string name="km">Km aproximado mensual</string>
+    <string name="moreThan4">Mayores a 4 horas</string>
+    <string name="lessThan4">Menores a 4 horas</string>
+    <string name="recycle">¿Reciclas?</string>
+    <string name="car">¿Tienes carro?</string>
+    <string name="goBack">Atrás</string>
+    <string name="WhatIsTitle">¿Qué es la huella de carbono?</string>
+    <string name="Advises">Reduce el número de vuelos en avión. El avión es uno de los transportes que más emisiones generan.
+    Si cambias de coche, elige uno que tenga un mayor rendimiento y que genere menos emisiones.
+    Toma medidas de climatización en tu hogar utilizando la calefacción y los aparatos de aire acondicionado de forma eficiente.
+    Utiliza menos papel. La industria papelera es el tercer emisor más grande de gases de efecto invernadero.
+    Consume alimentos producidos a nivel local y productos de temporada.
+    Reduce la cantidad de carnes en tu dieta.
+    Lleva tu propia bolsa a la compra. Reutiliza bolsas que tengas en casa o lleva una de tela a la hora de hacer la compra.
+    Recicla. Y no sólo cartón, papel, plástico o vidrio. Muchas cosas de las que tienes en casa pueden reciclarse: desde bombillas, a baterías o artículos electrónicos.</string>
+    <string name="WhatIsIt">
+        La huella de carbono es un indicador que mide el impacto sobre el calentamiento global.
+        Este indicador ambiental es la suma absoluta de todas las emisiones de GEI causadas directa o indirectamente por un individuo, organización, evento o producto. De forma simple, la huella de carbono se puede entender como la marca que se deja sobre el medio ambiente con cada actividad que emite gases de efecto invernadero.
+
+        La huella de carbono se expresa en unidades de carbono equivalente (CO2eq). Se utiliza esta unidad, pues la Huella de Carbono va más alla de la medición única del CO2 emitido, ya que tienen en cuenta todos los GEI que contribuyen en el calentamiento global para después convertir los resultados individuales de cada gas a equivalentes de CO2.
+
+        Por ejemplo, para calcular la huella de carbono de un producto, digamos un litro de leche sería necesario incluir los siguientes aspectos:
+
+        Producción de la materia prima (leche) en el sistema ganadero (pastoreo, manejo de nutrientes y estiércol),
+        transporte de la leche a la planta de producción,
+        procesamiento de la leche en la planta,
+        empacado de la leche,
+        trasporte para su distribución a los centros de venta,
+        consumo,
+        disposición final del embase.
+     </string>
 </resources>
