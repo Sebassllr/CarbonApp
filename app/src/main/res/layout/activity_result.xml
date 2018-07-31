@@ -9,24 +9,26 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:weightSum="10">
 
         <TextView
+            android:background="@drawable/square_box"
             android:layout_marginTop="15dp"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:id="@+id/tvResult"
             android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_height="0dp"
+            android:layout_weight="5"
             android:layout_gravity="center"
-            android:background="@drawable/round_button"
-            android:foreground="@drawable/ripple_effect"
             android:gravity="center_vertical|center" />
 
         <TextView
             android:id="@+id/tvConsume"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/veganstyle"
@@ -35,7 +37,8 @@
             android:textSize="30sp" />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/veganstyle"
@@ -43,17 +46,26 @@
             android:text="Consejos"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="25sp" />
+
         <ScrollView
+
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="200dp">
+
             <TextView
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:text="@string/Advises"
                 android:id="@+id/tvAdvises"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Advises"
+                android:textColor="@color/black" />
         </ScrollView>
 
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/addReminder"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Agregar recordatorio" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

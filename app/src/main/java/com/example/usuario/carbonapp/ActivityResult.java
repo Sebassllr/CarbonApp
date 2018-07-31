@@ -1,10 +1,14 @@
 package com.example.usuario.carbonapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
-public class ActivityResult extends AppCompatActivity {
+import java.util.Calendar;
+
+public class ActivityResult extends AppCompatActivity implements View.OnClickListener{
 
     private Double result = 0.0;
 
@@ -16,6 +20,8 @@ public class ActivityResult extends AppCompatActivity {
     }
 
     private void initializer(){
+        findViewById(R.id.addReminder).setOnClickListener(this);
+
         Bundle bundle = getIntent().getExtras();
         if(bundle != null){
             result = bundle.getDouble("total");
@@ -42,5 +48,20 @@ public class ActivityResult extends AppCompatActivity {
         }
         TextView tv = findViewById(R.id.tvConsume);
         tv.setText(resultText);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v.getId() == R.id.addReminder){
+            Calendar cal = Calendar.getInstance();
+            Intent intent = new Intent(Intent.ACTION_EDIT);
+            intent.setType("vnd.android.cursor.item/event");
+            intent.putExtra("beginTime", cal.getTimeInMillis() + 86400000);
+            intent.putExtra("allDay", true);
+            intent.putExtra("rrule", "FREQ=WEEKLY;COUNT=10;WKST=SU");
+            intent.putExtra("endTime", cal.getTimeInMillis()+60*60*1000+ 86400000);
+            intent.putExtra("title", "¡Ayudar al planeta!");
+            startActivity(intent);
+        }
     }
 }
